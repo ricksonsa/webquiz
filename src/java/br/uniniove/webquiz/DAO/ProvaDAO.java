@@ -145,5 +145,16 @@ public class ProvaDAO {
         
         return prova;
     }
+    
+    public void excluirProva (int idProva) throws SQLException, ClassNotFoundException {
+       conn = DriverManager.getConnection(urlBD, usuario, senha);
+        stm = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+        String delete = "delete from tb_rel_prova_questao where idProva = " + idProva;
+        stm.execute(delete);
+        delete = "delete from tb_prova where idProva = " + idProva;
+        stm.execute(delete);
+        conn.close();
+       
+    }
 
 }

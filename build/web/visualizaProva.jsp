@@ -52,11 +52,36 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
      
              
-<style>
+<style>  
     body{
-        margin-top: 10%;
-        margin-left: 30%;
+        margin-top: 5%;
+        margin-left: 35%;
+        background: #463e51;
     }
+    
+    .round{
+        border-radius: 9px;
+    }
+    
+       .backg{
+        background: #7e7191 !important;
+        border-radius: 9px !important;
+        border: 1px solid black !important;
+        color: white !important;
+    }
+    
+    .image{
+        width: 42px;
+        
+    }
+    
+    .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    color: white !important;
+     background: #463e51 !important;
+}
 </style>
 
         <title>Prova</title>
